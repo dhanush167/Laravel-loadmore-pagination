@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/loadmore', 'LoadMoreController@index')->name('loadmore');
+Route::post('/loadmore/load_data', 'LoadMoreController@load_data')->name('loadmore.load_data');
